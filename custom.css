@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700;800&display=swap');
 
 
 body{
     color: #F5F0F6;
     background: rgb(66, 81, 148);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* NAVBAR */
+.navb, .title-section{
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    right: 25%;
+}
+
+
 a {
     text-decoration: none;
     color: #F5F0F6;
+    z-index: 999;
 }
 
 a:hover{
@@ -19,35 +28,38 @@ a:hover{
 
 /* TITLE SECTION */
 
+h1 {
+    font-size: 50px;
+}
+
 h2 {
     font-size: 25px;
 }
+.title-line{
+    height:6px;
+    width: 450px;
+    background: linear-gradient(to right, rgba(245,250,246,0), rgba(240,250,246,1), rgba(245,250,246,0));
+    display: inline-block;
+    justify-content: center;
+} 
 
-/* CAROUSEL */
-.carousel{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+
 
 .carousel .carousel-item {
-    height: 600px;
+    height: 100vh;
   }
   
   .carousel-item img {
       object-fit: cover;
       position: absolute;
-      top: 5%;
-      bottom: 40%;
-      min-height: 600px;
+      height: 100vh;
   }
 
   
 .carousel-caption {
     font-size: 20px;
     color:#F5F0F6;
-    background: rgb(66, 81, 148, 0.35);
+    background: rgba(31, 31, 31, 0.35);
     padding: 3px 10px;
     border-radius: 10px;
     width: max-content;
