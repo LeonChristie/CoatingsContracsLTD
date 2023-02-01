@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700;800&display=swap');
 
 
 body{
     color: #F5F0F6;
-    background: rgb(66, 81, 148);
-    font-family: 'Roboto', sans-serif;
+    background-image: url(/images/Untitleddarkenedvan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+@media (max-width: 1590px){
+    body{
+        background-size: auto;
+    }
 }
 
 /* NAVBAR */
@@ -12,44 +19,48 @@ a {
     text-decoration: none;
     color: #F5F0F6;
 }
-
 a:hover{
     color: #9CA1C5;
 }
 
 /* TITLE SECTION */
-
+.title-section{
+    position: absolute;
+    top: 25%;
+    bottom :75%;
+    right:0;
+    left:0;
+}
 h2 {
     font-size: 25px;
 }
-
-/* CAROUSEL */
-.carousel{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.carousel .carousel-item {
-    height: 600px;
-  }
-  
-  .carousel-item img {
-      object-fit: cover;
-      position: absolute;
-      top: 5%;
-      bottom: 40%;
-      min-height: 600px;
-  }
-
-  
-.carousel-caption {
+.page-buttons {
+    background:rgb(66, 81, 148);
+    color: #F5F0F6;
     font-size: 20px;
-    color:#F5F0F6;
-    background: rgb(66, 81, 148, 0.35);
-    padding: 3px 10px;
-    border-radius: 10px;
-    width: max-content;
+    border: 1px #f5f0f6b6 solid;
+    border-radius: 5px;
+    padding:5px 20px;
+}
+.page-buttons:hover {
+   background: rgb(132, 154, 255);
+   border: 1px rgb(132, 154, 255) solid;
+   color: #F5F0F6;
+   transition: 0.5s;
 }
 
+
+  /* WORK */
+.work-background{
+    background: rgb(66, 81, 148);
+}
+.image-titles{
+background: rgb(66, 81, 148);
+color:#F5F0F6;
+border: 1px solid #F5F0F6;
+}
+.work-img{
+    border-top:1px solid #F5F0F6;
+    border-left:1px solid #F5F0F6;
+    border-right:1px solid #F5F0F6;
+}
